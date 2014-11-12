@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="me.anuraag.lunch.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Log In"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="10dp"
+        android:width="300dp"
+        android:background="#ecf0f1"
+        android:padding="8dp"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:width="300dp"
+        android:background="#ecf0f1"
+        android:padding="8dp"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+        android:background="#ecf0f1"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+</RelativeLayout>
